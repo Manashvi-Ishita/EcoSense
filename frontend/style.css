@@ -15,18 +15,20 @@ body {
 
 /* Header */
 .header {
+    position: relative;
+    z-index: 2;
     text-align: center;
     padding: 30px 20px 20px;
 }
 
 .header h1 {
     font-size: 2.4rem;
-    color: #238636;
+    color: #f0f3f1;
     margin-bottom: 8px;
 }
 
 .header p {
-    color: #64756a;
+    color:#41a465;
     font-size: 1rem;
 }
 
@@ -47,15 +49,43 @@ body {
     display: block;
 }
 
+/* EcoSense Landing Page Background */
+#scan-screen.active {
+    position: relative;
+    min-height: 70vh;
+    isolation: isolate;
+}
+
+#scan-screen.active::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(3, 48, 35, 0.30),
+            rgba(3, 48, 35, 0.30)
+        ),
+        url("background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
 /* General Card */
 .card {
-    background: white;
+    background: rgba(122, 148, 129, 0.92);
     border-radius: 24px;
     padding: 40px;
     text-align: center;
 
-    box-shadow: 0 10px 30px rgba(35, 134, 54, 0.08);
-    border: 1px solid #e1eee3;
+    box-shadow:
+        0 10px 30px rgba(10, 70, 40, 0.18);
+
+    border: 1px solid rgba(180, 220, 190, 0.8);
 }
 
 /* Headings */
@@ -65,7 +95,7 @@ body {
 }
 
 .card p {
-    color: #68776d;
+    color:#1f2d24;
     line-height: 1.6;
 }
 
@@ -242,7 +272,7 @@ button:active {
 /* Discalaimer */
 .disclaimer {
     font-size: 0.85rem !important;
-    color: #7b867e !important;
+    color:  #1f2d24 !important;
     margin: 20px 0;
 }
 
