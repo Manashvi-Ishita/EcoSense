@@ -1,0 +1,612 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4faf5;
+    color: #1f2d24;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    color: #238636;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #64756a;
+    font-size: 1rem;
+}
+
+/* Main application container */
+.app-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Screen */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* General Card */
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(35, 134, 54, 0.08);
+    border: 1px solid #e1eee3;
+}
+
+/* Headings */
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #68776d;
+    line-height: 1.6;
+}
+
+/* Large Icons */
+.large-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+/* Scan Screen */
+.scan-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.scan-card h2 {
+    color: #1e6f35;
+}
+
+.upload-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #238636;
+    color: white;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+button:hover {
+    background: #1c6e2d;
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 15px rgba(35, 134, 54, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Secondary Button */
+#upload-button {
+    background: #e8f5ea;
+    color: #238636;
+}
+
+#upload-button:hover {
+    background: #d8eedc;
+}
+
+/* Analysis Screen */
+
+.analyzing-card {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.analyzing-card h2 {
+    color: #238636;
+}
+
+/* Loading circle */
+.loading-circle {
+    width: 45px;
+    height: 45px;
+    margin: 30px auto 0;
+    border: 5px solid #dcefe0;
+    border-top: 5px solid #238636;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Identitfication Screen*/
+.item-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.item-name {
+    color: #238636;
+}
+
+.category {
+    display: inline-block;
+    background: #e8f5ea;
+    color: #28763a !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Pathway Screen */
+.pathway-card {
+    padding-bottom: 35px;
+}
+
+.pathway-card h2 {
+    color: #238636;
+}
+
+/* Pathway visual */
+.pathway {
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pathway-item {
+    font-size: 4rem;
+}
+
+.arrow {
+    font-size: 3rem;
+    color: #7a8a7e;
+}
+
+.pathway-bin {
+    font-size: 5rem;
+}
+
+.pathway-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #245b32;
+}
+
+
+/* Immediate Action Box */
+.action-box {
+    text-align: left;
+    background: #f1f8f2;
+    border-left: 5px solid #238636;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.action-box strong {
+    color: #238636;
+}
+
+.action-box p {
+    margin-top: 8px;
+}
+
+/* Discalaimer */
+.disclaimer {
+    font-size: 0.85rem !important;
+    color: #7b867e !important;
+    margin: 20px 0;
+}
+
+/* Disposal Animation screen */
+.disposal-card {
+    overflow: hidden;
+}
+.disposal-card h2 {
+    color: #238636;
+}
+
+/* Animation area */
+.animation-area {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    background: #f7fbf7;
+    border-radius: 20px;
+    border: 1px solid #e0ece2;
+}
+
+/* Failing Waste Item */
+#falling-item {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    z-index: 3;
+}
+
+/*Bin */
+.bin-container {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+/* Bin lid */
+#bin-lid {
+    width: 170px;
+    height: 18px;
+    margin-left: -10px;
+    background: #3784d8;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+/* Bin body */
+.bin-body {
+    width: 150px;
+    height: 140px;
+    background: #4c91df;
+    border-radius: 8px 8px 18px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Disposal Animation*/
+#falling-item.drop {
+    animation: wasteDrop 1.8s ease-in forwards;
+}
+
+#bin-lid.open {
+    transform: rotate(-25deg) translate(-8px, -8px);
+}
+
+#bin-lid.close {
+    transform: rotate(0deg);
+}
+
+@keyframes wasteDrop {
+    0% {
+        top: 30px;
+        opacity: 1;
+    }
+    70% {
+        top: 210px;
+        opacity: 1;
+    }
+    100% {
+        top: 275px;
+        opacity: 0;
+    }
+}
+
+/* Pathway Label */
+.pathway-label {
+    display: inline-block;
+    background: #e7f1fc;
+    color: #2869a8;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* Recommendation Screen */
+.recommendation-card {
+    text-align: left;
+}
+.recommendation-card > p {
+    margin-bottom: 25px;
+}
+
+/* Recommendation heading */
+.recommendation-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.recommendation-header span {
+    font-size: 2.2rem;
+}
+
+.recommendation-header h2 {
+    margin: 0;
+    color: #238636;
+}
+
+/* Reccomendation System */
+.recommendation {
+    background: #f1f8f2;
+    border: 1px solid #d9eadc;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.recommendation-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.recommendation h2 {
+    font-size: 1.4rem;
+    color: #286d38;
+}
+
+/* Procedure */
+.recommendation-card h3 {
+    color: #286d38;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.procedure {
+    background: #fafcfb;
+    border-left: 4px solid #7cbf88;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.procedure p {
+    margin-bottom: 12px;
+}
+
+.procedure p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Benefit Box */
+.benefit-box {
+    background: #f1f8f2;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.6;
+    color: #4d6353;
+}
+
+/* Saftey Box*/
+.safety-box {
+    background: #fff8e6;
+    border-left: 4px solid #e0a62c;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.safety-box strong {
+    color: #9a6b00;
+}
+
+
+/* Scan Again Button */
+#scan-again-button {
+    display: block;
+    margin: 30px auto 0;
+}
+
+
+/*Mobile Responsiveness */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .app-container {
+        padding: 12px;
+    }
+    .card {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+    .card h2 {
+        font-size: 1.5rem;
+    }
+    .large-icon,
+    .item-icon {
+        font-size: 4rem;
+    }
+    .upload-area {
+        flex-direction: column;
+    }
+    .upload-area button {
+        width: 100%;
+    }
+    .animation-area {
+        height: 320px;
+    }
+}
+
+/* Camera Modal */
+.camera-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.camera-modal.active {
+    display: flex;
+}
+
+.camera-box {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.camera-box h2 {
+    color: #238636;
+    margin-bottom: 20px;
+}
+
+#camera-video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #111;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#close-camera-button {
+    background: #e8f5ea;
+    color: #238636;
+}
+
+#camera-canvas {
+    display: none;
+}
+
+/* Captured image */
+#captured-preview {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    border: 2px solid #dcefe0;
+}
+
+/*Camera Modal */
+.camera-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.camera-modal.active {
+    display: flex;
+}
+
+.camera-box {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.camera-box h2 {
+    color: #238636;
+    margin-bottom: 20px;
+}
+
+#camera-video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #111;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#close-camera-button {
+    background: #e8f5ea;
+    color: #238636;
+}
+
+#camera-canvas {
+    display: none;
+}
+
+/* Captured image */
+#captured-preview {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    border: 2px solid #dcefe0;
+}

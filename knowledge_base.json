@@ -1,0 +1,370 @@
+{
+   "banana_peel": {
+      "item": "Banana Peel",
+      "category": "Organic / Biodegradable",
+      "bin": "Green",
+      "immediate_action": "Compost at home or place in the appropriate wet-waste stream",
+      "alternatives": [
+         {
+            "name": "Home Composting",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Cut the banana peel into smaller pieces.",
+               "Add it to a suitable home composting system.",
+               "Mix or cover it with suitable dry brown material.",
+               "Maintain appropriate moisture and aeration as the compost develops."
+            ],
+            "benefit": "Helps divert organic waste from disposal and produces compost that can be used as a soil amendment."
+         },
+         {
+            "name": "Vermicomposting",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Cut the banana peel into smaller pieces.",
+               "Add a moderate amount to an established vermicomposting system.",
+               "Cover it with suitable bedding material.",
+               "Maintain suitable moisture and conditions for the worms."
+            ],
+            "benefit": "Converts suitable organic waste into worm castings that can be used to improve soil."
+         },
+         {
+            "name": "Use Finished Compost as Soil Amendment",
+            "type": "Reuse",
+            "procedure": [
+               "Compost the banana peel with other suitable organic materials.",
+               "Allow the composting process to finish completely.",
+               "Mix the finished compost into garden soil as a soil amendment."
+            ],
+            "benefit": "Returns organic matter to the soil and can improve soil structure and moisture retention."
+         }
+      ],
+      "safety_level": "Low",
+      "safety_note": "Use clean banana peels and follow appropriate composting practices."
+   },
+   "vegetable_scraps": {
+      "item": "Vegetable Scraps",
+      "category": "Organic / Biodegradable",
+      "bin": "Green",
+      "immediate_action": "Compost at home or place in the appropriate wet-waste stream",
+      "alternatives": [
+         {
+            "name": "Home Composting",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Collect suitable vegetable scraps and remove any non-compostable material.",
+               "Cut larger pieces into smaller pieces.",
+               "Add the scraps to a suitable composting system.",
+               "Balance the material with suitable dry brown material and maintain moisture and aeration."
+            ],
+            "benefit": "Diverts suitable organic waste from disposal and produces compost for use as a soil amendment."
+         },
+         {
+            "name": "Vermicomposting",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Remove unsuitable materials from the vegetable scraps.",
+               "Cut larger scraps into smaller pieces.",
+               "Add a moderate amount to an established vermicomposting system.",
+               "Cover the scraps with suitable bedding material and maintain appropriate conditions."
+            ],
+            "benefit": "Converts suitable vegetable waste into worm castings that can be used to improve soil."
+         },
+         {
+            "name": "Vegetable Stock",
+            "type": "Food Reuse",
+            "procedure": [
+               "Select clean vegetable trimmings that are suitable for food use.",
+               "Wash the trimmings appropriately.",
+               "Simmer suitable trimmings in water to prepare stock.",
+               "Discard any remaining material through the appropriate organic-waste route."
+            ],
+            "benefit": "Can extend the useful life of suitable food material and reduce avoidable food waste."
+         }
+      ],
+      "safety_level": "Low",
+      "safety_note": "Only use clean, food-safe scraps for food preparation. Do not use spoiled, moldy, or contaminated material."
+   },
+   "paper": {
+      "item": "Paper",
+      "category": "Dry / Recyclable",
+      "bin": "Blue",
+      "immediate_action": "Reuse if possible; otherwise keep clean and dry for appropriate paper recycling",
+      "alternatives": [
+         {
+            "name": "Reuse Blank Sides",
+            "type": "Reuse",
+            "procedure": [
+               "Check whether the paper has a clean and usable side.",
+               "Reuse the blank side for notes, drafts, or other suitable purposes."
+            ],
+            "benefit": "Extends the useful life of the paper before recycling or disposal."
+         },
+         {
+            "name": "Paper Crafts",
+            "type": "Reuse",
+            "procedure": [
+               "Select clean and suitable paper.",
+               "Cut, fold, or combine it to create simple educational or craft materials."
+            ],
+            "benefit": "Repurposes usable paper and delays disposal."
+         },
+         {
+            "name": "Composting Suitable Paper",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Use only suitable non-glossy and minimally treated paper.",
+               "Shred the paper into smaller pieces.",
+               "Add it as a dry brown material to a suitable composting system."
+            ],
+            "benefit": "Allows suitable paper to contribute carbon-rich material to a composting process."
+         }
+      ],
+      "safety_level": "Low",
+      "safety_note": "Keep recyclable paper clean and dry. Avoid composting glossy, laminated, heavily coated, or contaminated paper."
+   },
+   "cardboard_box": {
+      "item": "Cardboard Box",
+      "category": "Dry / Paper-Cardboard",
+      "bin": "Blue",
+      "immediate_action": "Reuse if possible; otherwise flatten and keep dry for appropriate paper/cardboard recycling",
+      "alternatives": [
+         {
+            "name": "Storage Organizer",
+            "type": "Reuse",
+            "procedure": [
+               "Clean and inspect the cardboard box.",
+               "Reuse it to store lightweight household, study, or office items."
+            ],
+            "benefit": "Extends the useful life of the cardboard and reduces the need for new storage materials."
+         },
+         {
+            "name": "Packaging Material",
+            "type": "Reuse",
+            "procedure": [
+               "Check that the box is clean and structurally sound.",
+               "Reuse it for suitable packing or transporting items."
+            ],
+            "benefit": "Reduces the need for new packaging material."
+         },
+         {
+            "name": "Composting Suitable Cardboard",
+            "type": "Waste Recovery",
+            "procedure": [
+               "Remove tape, plastic, labels, and other unsuitable materials.",
+               "Use only suitable untreated cardboard.",
+               "Shred or tear it into smaller pieces.",
+               "Add it as dry brown material to a suitable composting system."
+            ],
+            "benefit": "Allows suitable cardboard to contribute carbon-rich material to compost."
+         }
+      ],
+      "safety_level": "Low",
+      "safety_note": "Avoid composting waxed, laminated, heavily treated, or contaminated cardboard."
+   },
+   "plastic_bottle": {
+      "item": "Plastic Bottle",
+      "category": "Dry / Plastic",
+      "bin": "Blue",
+      "immediate_action": "Empty, rinse if appropriate, and send for suitable plastic recycling or recovery",
+      "alternatives": [
+         {
+            "name": "Reuse for Suitable Storage",
+            "type": "Reuse",
+            "procedure": [
+               "Clean the bottle thoroughly.",
+               "Reuse it only for a suitable non-hazardous purpose."
+            ],
+            "benefit": "Extends the useful life of the bottle before recycling."
+         },
+         {
+            "name": "Plant or Seedling Container",
+            "type": "Repurpose",
+            "procedure": [
+               "Clean the bottle.",
+               "Prepare it carefully for use as a small plant or seedling container.",
+               "Ensure suitable drainage and safe handling of any cut edges."
+            ],
+            "benefit": "Repurposes a used container for a practical household or gardening use."
+         },
+         {
+            "name": "Plastic Recycling",
+            "type": "Material Recovery",
+            "procedure": [
+               "Empty the bottle and clean it where appropriate.",
+               "Separate it according to the local waste-collection requirements.",
+               "Place it in the appropriate plastic recycling or recovery stream."
+            ],
+            "benefit": "Allows suitable plastic material to enter an appropriate recovery or recycling pathway."
+         }
+      ],
+      "safety_level": "Medium",
+      "safety_note": "Do not use damaged plastic bottles for hot liquids or unsuitable food storage. Follow local recycling requirements."
+   },
+   "flexible_food_packet": {
+      "item": "Bread / Chips Packet",
+      "category": "Dry / Flexible Packaging",
+      "bin": "Blue",
+      "immediate_action": "Keep clean and dry and use the appropriate flexible-packaging collection or recovery route",
+      "alternatives": [
+         {
+            "name": "Craft or Organization Material",
+            "type": "Repurpose",
+            "procedure": [
+               "Empty and clean the packet as far as practical.",
+               "Reuse the material for simple craft or organization purposes where appropriate."
+            ],
+            "benefit": "Repurposes packaging material and delays disposal."
+         },
+         {
+            "name": "Flexible Packaging Recovery",
+            "type": "Material Recovery",
+            "procedure": [
+               "Empty the packet and remove remaining food material.",
+               "Keep the packaging clean and dry where possible.",
+               "Use a local collection or recovery route that accepts the specific type of flexible packaging."
+            ],
+            "benefit": "Directs suitable flexible packaging toward an appropriate recovery pathway."
+         }
+      ],
+      "safety_level": "Medium",
+      "safety_note": "Do not compost flexible food packets or place them in paper recycling. Acceptance of flexible packaging varies by local collection systems."
+   },
+   "pen_stationery": {
+      "item": "Pen / Stationery",
+      "category": "Dry / Stationery",
+      "bin": "Blue",
+      "immediate_action": "Check whether the item can be refilled or repurposed before disposal",
+      "alternatives": [
+         {
+            "name": "Refill Compatible Pen",
+            "type": "Reuse",
+            "procedure": [
+               "Check whether the pen is designed to accept a compatible replacement refill.",
+               "Replace the empty refill with a suitable compatible refill.",
+               "Continue using the pen if it remains functional."
+            ],
+            "benefit": "Extends the useful life of the pen and reduces the need to discard the pen body."
+         },
+         {
+            "name": "Creative or Educational Reuse",
+            "type": "Repurpose",
+            "procedure": [
+               "Clean the stationery item where appropriate.",
+               "Reuse suitable components for simple craft, educational, or organizational activities."
+            ],
+            "benefit": "Repurposes suitable stationery components and delays disposal."
+         },
+         {
+            "name": "Appropriate Disposal",
+            "type": "Disposal",
+            "procedure": [
+               "If the pen cannot be refilled or repurposed, keep it separate from organic waste.",
+               "Follow the appropriate local waste-collection or disposal route."
+            ],
+            "benefit": "Ensures the item is directed toward the appropriate waste pathway when further reuse is not practical."
+         }
+      ],
+      "safety_level": "Low",
+      "safety_note": "Do not cut, burn, or heat stationery items to recover materials. Recycling acceptance varies by local facility."
+   },
+   "electrical_wire": {
+      "item": "Electrical Wire",
+      "category": "Battery / E-waste",
+      "bin": "E-waste Collection",
+      "immediate_action": "Keep separate and send to an authorized e-waste collection or recycling channel",
+      "alternatives": [
+         {
+            "name": "Authorized E-waste Recovery",
+            "type": "Material Recovery",
+            "procedure": [
+               "Keep the wire separate from ordinary household waste.",
+               "Do not burn or strip the insulation at home.",
+               "Send it to an authorized e-waste collection or recycling channel."
+            ],
+            "benefit": "Allows electrical materials to enter a more appropriate recovery pathway."
+         }
+      ],
+      "safety_level": "High",
+      "safety_note": "Do not burn insulation, strip wires using unsafe methods, or perform electrical work unless you are qualified to do so."
+   },
+   "battery": {
+      "item": "Battery",
+      "category": "E-waste / Battery",
+      "bin": "E-waste",
+      "immediate_action": "Keep separate from ordinary waste and take it to an appropriate battery collection or recycling point",
+      "alternatives": [
+         {
+            "name": "Battery Collection and Recycling",
+            "type": "Material Recovery",
+            "procedure": [
+               "Keep the battery separate from ordinary household waste.",
+               "Do not open, puncture, crush, burn, or modify the battery.",
+               "Take it to an appropriate battery collection or recycling point."
+            ],
+            "benefit": "Supports safe handling and recovery of materials from used batteries."
+         }
+      ],
+      "safety_level": "Very High",
+      "safety_note": "Never open, puncture, crush, burn, short-circuit, or modify a battery. Follow the collection instructions for the specific battery type."
+   },
+   "medicine_strip": {
+      "item": "Medicine Strip",
+      "category": "Medical & Sanitary",
+      "bin": "Medical & Sanitary",
+      "immediate_action": "Do not place unused or expired medicines in ordinary household waste; use an appropriate medicine take-back or disposal pathway",
+      "alternatives": [
+         {
+            "name": "Medicine Take-back or Authorized Disposal",
+            "type": "Safe Disposal",
+            "procedure": [
+               "Keep unused or expired medicines separate from ordinary waste.",
+               "Follow the instructions of an authorized medicine take-back or disposal facility where available.",
+               "Follow the applicable local guidance for medicine disposal."
+            ],
+            "benefit": "Reduces the risk of inappropriate disposal and supports safer handling of unused or expired medicines."
+         }
+      ],
+      "safety_level": "High",
+      "safety_note": "Do not reuse expired or unwanted medicines. Do not open, crush, burn, or repurpose medicine packaging for food or other household uses."
+   },
+   "used_syringe": {
+      "item": "Used Syringe / Insulin Needle",
+      "category": "Medical & Sanitary",
+      "bin": "Medical & Sanitary",
+      "immediate_action": "Do not place loose sharps in ordinary household waste; use an appropriate sharps or biomedical-waste disposal channel",
+      "alternatives": [
+         {
+            "name": "Safe Sharps Disposal",
+            "type": "Safe Disposal",
+            "procedure": [
+               "Do not bend, break, or manipulate the used needle unnecessarily.",
+               "Do not place the loose sharp in ordinary household waste or recycling.",
+               "Use an appropriate sharps container or disposal channel according to local medical-waste guidance."
+            ],
+            "benefit": "Reduces the risk of injury and supports safer handling of used sharps."
+         }
+      ],
+      "safety_level": "Very High",
+      "safety_note": "Used needles can cause serious injury and infection risks. Never reuse or place loose needles in recycling or ordinary household waste."
+   },
+   "sanitary_pad": {
+      "item": "Sanitary Pad",
+      "category": "Medical & Sanitary",
+      "bin": "Medical & Sanitary",
+      "immediate_action": "Wrap securely and place in the appropriate sanitary-waste disposal stream",
+      "alternatives": [
+         {
+            "name": "Safe Sanitary-Waste Disposal",
+            "type": "Safe Disposal",
+            "procedure": [
+               "Wrap the used sanitary pad securely using suitable wrapping material.",
+               "Place it in the designated sanitary-waste or residual-waste stream according to local municipal guidance.",
+               "Do not place used sanitary products loose in recycling or composting."
+            ],
+            "benefit": "Supports hygienic handling and reduces exposure to contaminated waste."
+         }
+      ],
+      "safety_level": "High",
+      "safety_note": "Do not wash, reuse, compost, or place disposable sanitary pads in ordinary recyclable-material streams."
+   }
+}

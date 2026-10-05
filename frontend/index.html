@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSense</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!--Header-->
+    <header class="header">
+        <h1>🌱 EcoSense</h1>
+        <p>
+            AI-Powered Smart Waste Guidance
+        </p>
+    </header>
+
+    <!--Main Application -->
+    <main class="app-container">
+
+        <!--Screen 1 - Scan -->
+
+        <section id="scan-screen" class="screen active">
+            <div class="card scan-card">
+
+                <div class="large-icon">
+                    📷
+                </div>
+
+                <h2>
+                    Scan Your Waste
+                </h2>
+
+                <p>
+                    Take a photo or upload an image
+                    of a waste item.
+                </p>
+
+                <div class="upload-area">
+
+                    <button id="camera-button">
+                        📷 Take a Photo
+                    </button>
+
+                    <button id="upload-button">
+                        📁 Upload an Image
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Screen 2- Analysing -->
+        <section id="analyzing-screen" class="screen">
+
+            <div class="card analyzing-card">
+
+                <div class="large-icon">
+                    🔍
+                </div>
+
+                <h2>
+                    Analysing the Waste...
+                </h2>
+
+                <p>
+                    EcoSense AI is identifying your item.
+                </p>
+
+                <div class="loading-circle"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Screen -3 Identified -->
+
+        <section id="identified-screen" class="screen">
+
+            <div class="card">
+
+                <img
+                    id="captured-preview"
+                    alt="Captured waste item"
+                >
+
+                <div
+                    id="item-icon"
+                    class="item-icon">
+                </div>
+
+                <h2
+                    id="item-name"
+                    class="item-name">
+                </h2>
+
+                <p
+                    id="item-category"
+                    class="category">
+                </p>
+
+                <button id="continue-button">
+                    Continue →
+                </button>
+
+            </div>
+
+        </section>
+
+        <!--Section -4 waste Pathway-->
+        <section id="pathway-screen" class="screen">
+
+            <div class="card pathway-card">
+
+                <h2>
+                    ♻️ Your Waste Pathway
+                </h2>
+
+                <p>
+                    EcoSense has identified the appropriate
+                    waste pathway for this item.
+                </p>
+
+                <div class="pathway">
+
+                    <div
+                        id="pathway-item"
+                        class="pathway-item">
+                    </div>
+
+                    <div class="arrow">
+                        ↓
+                    </div>
+
+                    <div
+                        id="pathway-bin"
+                        class="pathway-bin">
+                    </div>
+
+                    <div
+                        id="pathway-name"
+                        class="pathway-name">
+                    </div>
+
+                </div>
+
+                <!-- Immediate Action -->
+                <div class="action-box">
+
+                    <strong>
+                        Immediate Action
+                    </strong>
+
+                    <p id="immediate-action">
+                    </p>
+
+                </div>
+
+                <!-- Disclaimer -->
+                <p class="disclaimer">
+
+                    Bin guidance follows the Indian
+                    source-segregation model; local
+                    municipal rules may vary.
+                    Specialized waste should be handed over
+                    through appropriate authorized/local
+                    collection channels.
+
+                </p>
+
+                <button id="disposal-button">
+                    🗑️ Show Disposal
+                </button>
+
+            </div>
+
+        </section>
+
+        <!--Screen -5 Disposal Animation -->
+        <section id="disposal-screen" class="screen">
+
+            <div class="card disposal-card">
+
+                <h2>
+                    🗑️ Disposal Guidance
+                </h2>
+
+                <p id="disposal-description">
+                </p>
+
+                <div class="animation-area">
+
+                    <!-- Item -->
+                    <div id="falling-item">
+                    </div>
+
+                    <!-- Bin -->
+
+                    <div class="bin-container">
+
+                        <div id="bin-lid">
+                        </div>
+
+                        <div class="bin-body">
+
+                            <span id="bin-symbol">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="disposal-pathway-label"
+                    class="pathway-label">
+                </div>
+
+                <button id="recommendation-button">
+                    💡 See What You Can Do Before Disposal
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Screen -6 Recomendation -->
+        <section
+            id="recommendation-screen"
+            class="screen">
+
+            <div class="card recommendation-card">
+
+                <!-- Recommendation Header -->
+                <div class="recommendation-header">
+
+                    <span>
+                        💡
+                    </span>
+
+                    <h2>
+                        Before You Dispose...
+                    </h2>
+
+                </div>
+
+                <p id="recommendation-introduction">
+                </p>
+
+                <!-- Recommendation -->
+                <div class="recommendation">
+
+                    <div
+                        id="recommendation-icon"
+                        class="recommendation-icon">
+                    </div>
+
+                    <h2 id="recommendation-name">
+                    </h2>
+
+                    <p>
+
+                        <strong>Type:</strong>
+
+                        <span id="recommendation-type">
+                        </span>
+
+                    </p>
+
+                </div>
+
+                <!-- Procedure -->
+                <h3>
+                    📖 How to do it
+                </h3>
+
+
+                <div
+                    id="procedure"
+                    class="procedure">
+                </div>
+
+                <!-- Benefit -->
+                <h3>
+                    🌱 Benefit
+                </h3>
+
+                <div
+                    id="benefit"
+                    class="benefit-box">
+                </div>
+
+                <!-- Safety -->
+                <h3>
+                    ⚠️ Safety
+                </h3>
+
+                <div class="safety-box">
+
+                    <strong>
+                        Safety Level:
+                        <span id="safety-level"></span>
+                    </strong>
+
+                    <p id="safety-note">
+                    </p>
+
+                </div>
+
+                <button id="scan-again-button">
+                    📷 Scan Another Item
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Camera Model -->
+    <div
+        id="camera-modal"
+        class="camera-modal">
+
+        <div class="camera-box">
+
+            <h2>
+                📷 Take a Photo
+            </h2>
+
+            <video
+                id="camera-video"
+                autoplay
+                playsinline>
+            </video>
+
+            <div class="camera-controls">
+
+                <button id="capture-button">
+                    📸 Capture
+                </button>
+
+                <button id="close-camera-button">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Camera Canvas -->
+    <canvas
+        id="camera-canvas">
+    </canvas>
+
+    <!-- Image Upload-->
+    <input
+        type="file"
+        id="image-input"
+        accept="image/*"
+        hidden
+    >
+    
+    <!--Javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
