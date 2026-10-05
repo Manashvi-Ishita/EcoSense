@@ -128,6 +128,7 @@ Environment variables
 
 ## 📂 Project Structure
 
+```
 EcoSense/
 │
 ├── frontend/
@@ -140,6 +141,7 @@ EcoSense/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
 ## ⚙️ Installation
 
