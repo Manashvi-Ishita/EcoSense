@@ -19,3 +19,7 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Development/testing scripts
+test_gemini.py
+check_json.py
